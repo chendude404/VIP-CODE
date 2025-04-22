@@ -10,7 +10,6 @@ def generate_zsc_output(prompt):
     zeroshot_classifier = settings.ZERO_SHOT_PIPELINE
 
     if not classes_verbalized or not zeroshot_classifier:
-        # Consider logging this error properly in a real app
         return None
 
     try:
